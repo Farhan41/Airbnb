@@ -68,7 +68,7 @@ const onSubmit : SubmitHandler<FieldValues> = (data) =>{
 const toggle = useCallback(()=>{
     loginModal.onClose();
     registerModal.onOpen()
-},[])
+},[loginModal, registerModal])
 
 const bodyContent = (
     <div className='flex flex-col gap-4'>
@@ -126,7 +126,7 @@ const bodyContent = (
                     First time using Airbnb?
                 </div>
                 <div
-                onClick={loginModal.onClose}
+                onClick={toggle}
                  className='
                  text-neutral-800
                   cursor-pointer
