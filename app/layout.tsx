@@ -30,7 +30,7 @@ export default async function RootLayout({
       <body className={inter.className}>
        <ClientOnly>
         <ToastProvider/>
-        {/* <SearchModal/> */}
+        <SearchModal/>
         <RentModal/>
        <LoginModal/>
        <RegisterModal/>
