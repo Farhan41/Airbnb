@@ -7,6 +7,7 @@ import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
 import dynamic from "next/dynamic";
 
+
 interface ListingInfoProps {
     user: SafeUser;
     description: string;
